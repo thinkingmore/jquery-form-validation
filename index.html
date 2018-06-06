@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 header-top"></div>
+                <div class="col-9 header-top"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 menu" id="menu">
+                    <nav>
+                        <ul class="menu-ul" id="ul">
+                            <li class="menu-li"><a href="index.html">Home</a> </li>
+                            <li class="menu-li"><a href="about.html">About</a> </li>
+                            <li class="menu-li"><a href="gallery.html">Gallery</a> </li>
+                            <li class="menu-li"><a href="portfolio.html">Portfolio</a> </li>
+                            <li class="menu-li"><a href="contact.html">Contact</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 content"></div>
+                <div class="col-9 content">
+                    <form action="" method="POST" id="form">
+                        <table>
+                            <tr>
+                                <td>First Name</td>
+                                <td>
+                                    <input type="text" id="firstName"><span id="firstNameError"></span>
+                                </td>
+
+                            <tr>
+                                <td>Last Name</td>
+                                <td>
+                                    <input type="text" id="lastName"><span id="lastNameError"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Email Address</td>
+                                <td>
+                                    <input type="email" id="emailAddress"><span id="emailAddressError"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Password</td>
+                                <td>
+                                    <input type="password" id="password">
+                                    <input type="checkbox" id="showHide">Show Password
+                                    <span id="passwordError"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Confirm Password</td>
+                                <td>
+                                    <input type="password" id="confirmpassword">
+                                    <input type="checkbox" id="showHide">Show Password
+                                    <span id="confirmpasswordError"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="radio" id="male" name="gender" value="male"> Male
+                                    <input type="radio" id="female" name="gender" value="female"> Female
+                                    <span id="genderError"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>District Name</td>
+                                <td>
+                                    <select id="district">
+                                        <option value=" ">--- District Name ---</option>
+                                        <option value="dhaka"> Dhaka</option>
+                                        <option value="savar"> Savar</option>
+                                        <option value="dohar"> Dohar</option>
+                                        <option value="tangail"> Tangail</option>
+                                        <option value="manikgonj">Manikgonj</option>
+                                    </select>
+                                    <span id="districtError"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td><input type="submit" name="btn" id="btn" value="Submit"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+                <div class="col-12 footer"></div>
+            </div>
+        </div>
+
+    <!-- JavaScript-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- /JavaScript-->
+    </body>
+</html>
